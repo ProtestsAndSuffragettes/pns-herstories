@@ -1,0 +1,23 @@
+{
+	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+	"bootstrap-sha": "01a12498f1defe3a716e1ba8b35cd47b9691185a",
+	"packages": {
+		".": {
+			"release-type": "php",
+			"package-name": "pns-herstories",
+			"changelog-path": "CHANGELOG.md",
+			"include-component-in-tag": false,
+			"include-v-in-tag": true,
+			"extra-files": [
+				{
+					"type": "generic",
+					"path": "pns-herstories.php"
+				},
+				{
+					"type": "generic",
+					"path": "VERSION"
+				}
+			]
+		}
+	}
+}
