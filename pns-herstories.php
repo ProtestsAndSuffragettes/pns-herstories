@@ -8,6 +8,8 @@
  * Version: 0.1.0
  * Author: Protests and Suffragettes
  * Text Domain: pns-herstories
+ * Requires at least: 6.5
+ * Requires PHP: 8.0
  *
  * @package PNS_Herstories
  */
