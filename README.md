@@ -21,6 +21,12 @@ The legacy `/herstories/` page family was the landing experience during v1
 migration. After cutover, the plugin-owned CPT archive owns `/herstories/` and
 single Herstory entries live below that archive route.
 
+## Agent workflow
+
+See [`AGENTS.md`](AGENTS.md) for the repository workflow, local Dex planning
+state, PHP verification, and Release Please conventions. The project-scoped
+WordPress skills are available under `.codex/skills/`.
+
 ## V1 Behavior
 
 - Adds a `Herstories` admin menu.
