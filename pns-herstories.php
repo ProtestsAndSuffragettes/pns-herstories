@@ -5,7 +5,7 @@
 /**
  * Plugin Name: PNS Herstories
  * Description: Project-owned Herstories content model for Protests and Suffragettes.
- * Version: 0.1.0
+ * Version: 0.1.1
  * Author: Protests and Suffragettes
  * Text Domain: pns-herstories
  * Requires at least: 6.5
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'PNS_HERSTORIES_VERSION', '0.1.0' );
+define( 'PNS_HERSTORIES_VERSION', '0.1.1' );
 /*
  * x-release-please-end
  */
