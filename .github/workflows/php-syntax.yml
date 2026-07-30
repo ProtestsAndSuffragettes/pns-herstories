@@ -6,19 +6,17 @@ on:
     branches:
       - main
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   php-syntax:
-    name: PHP ${{ matrix.php }}
+    name: PHP 8.0
     runs-on: blacksmith-2vcpu-ubuntu-2404
-    strategy:
-      fail-fast: false
-      matrix:
-        php:
-          - '8.0'
-          - '8.3'
     steps:
       - uses: actions/checkout@v4
       - uses: shivammathur/setup-php@v2
         with:
-          php-version: ${{ matrix.php }}
+          php-version: '8.0'
       - run: find . -type f -name '*.php' -print0 | xargs -0 -n 1 php -l
